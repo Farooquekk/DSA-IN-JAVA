@@ -1,0 +1,28 @@
+Selection sort and bubble sort are both comparison-based sorting algorithms, but they differ in their approach to sorting elements. Let's compare these algorithms in terms of their time complexity using an example scenario.
+
+Consider an array of integers: `[5, 3, 8, 2, 7]`.
+
+1. Selection Sort:
+   - In selection sort, we repeatedly find the minimum element from the unsorted part and swap it with the first unsorted element.
+   - For each pass, we need to traverse the unsorted part of the array to find the minimum element.
+   - The number of comparisons required is approximately \( n(n-1)/2 \), where \( n \) is the number of elements.
+   - In each pass, we perform \( n-1 \) comparisons.
+   - The time complexity of selection sort is \( O(n^2) \) in the worst-case scenario.
+
+2. Bubble Sort:
+   - In bubble sort, we repeatedly swap adjacent elements if they are in the wrong order.
+   - After each pass, the largest element in the unsorted part of the array bubbles up to its correct position.
+   - The number of comparisons required is also approximately \( n(n-1)/2 \).
+   - In each pass, we perform \( n-1 \) comparisons.
+   - The time complexity of bubble sort is also \( O(n^2) \) in the worst-case scenario.
+
+Comparing the two algorithms:
+- Both selection sort and bubble sort have the same worst-case time complexity of \( O(n^2) \).
+- Both algorithms are inefficient for large datasets.
+- Selection sort typically performs fewer swaps compared to bubble sort, as it only swaps once per pass, whereas bubble sort may perform multiple swaps per pass.
+
+Example scenario:
+- For the array `[5, 3, 8, 2, 7]`, both selection sort and bubble sort would require multiple passes to sort the elements.
+- Both algorithms would perform comparisons and swaps to arrange the elements in ascending order.
+
+In summary, both selection sort and bubble sort have similar time complexities and are inefficient for large datasets. While selection sort may perform fewer swaps, both algorithms are not suitable for sorting large arrays efficiently.
